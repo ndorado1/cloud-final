@@ -77,11 +77,11 @@ default_user = os.environ.get('DB_USER', getpass.getuser())
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'medical_devices_db'),
-        'USER': default_user,
-        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
+        'NAME': 'medical_devices_db',
+        'USER': 'usuario_app',
+        'PASSWORD': 'Cloud+2025',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
